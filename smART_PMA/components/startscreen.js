@@ -6,7 +6,7 @@ import {
     Text,
     View
 } from 'react-native';
-import {StackNavigator} from "react-navigation";
+import { StackNavigator } from "react-navigation";
 
 
 
@@ -37,6 +37,12 @@ export default class StartScreen extends Component {
                         this.props.navigation.navigate("PickGallery");
                     }}
                     title="Pick a Gallery"
+                />
+                <Button
+                    onPress={() => {
+                        this.props.navigation.navigate("FBAuth");
+                    }}
+                    title="Facebook Auth"
                 />
             </View>
         );

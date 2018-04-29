@@ -12,6 +12,7 @@ import LogIn from "./components/login";
 import NewUser from "./components/newUser";
 import GalleryChoice from "./components/galleryChoice";
 import SliderImages from "./components/slider";
+import FBAuth from "./components/fbAuth";
 
 //for Auth
 import firebase from 'react-native-firebase';
@@ -32,6 +33,9 @@ const RootStack = StackNavigator(
     },
     Discover: {
       screen: SliderImages
+    },
+    FBAuth: {
+      screen: FBAuth
     },
   },
   {
