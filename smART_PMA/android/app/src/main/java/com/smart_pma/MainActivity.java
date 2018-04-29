@@ -2,6 +2,8 @@ package com.smart_pma;
 
 import com.facebook.react.ReactActivity;
 
+import android.content.Intent; //FBSDK
+
 public class MainActivity extends ReactActivity {
 
     /**
@@ -11,5 +13,12 @@ public class MainActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
         return "smART_PMA";
+    }
+
+    //FBSDK
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        MainApplication.getCallbackManager().onActivityResult(requestCode, resultCode, data);
     }
 }
