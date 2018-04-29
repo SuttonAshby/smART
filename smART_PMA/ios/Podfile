@@ -11,6 +11,8 @@ target 'smART_PMA' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
 
+  pod 'Google/SignIn'
+
 
 
   target 'smART_PMATests' do
