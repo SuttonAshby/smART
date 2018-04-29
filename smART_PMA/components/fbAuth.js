@@ -50,14 +50,19 @@ export default class FBAuth extends Component {
                                 // create a new firebase credential with the token
                                 const credential = firebase.auth.FacebookAuthProvider.credential(data.accessToken);
 
-                                // login with credential
-                                const currentUser = await firebase.auth().signInAndRetrieveDataWithCredential(credential);
+                                
+                                firebase.auth().currentUser.linkWithCredential(credential).then(function(user) {
+                                    alert("Anonymous account successfully upgraded", user);
+                                  }, function(error) {
+                                    alert("Error upgrading anonymous account", error);
+                                  });
 
-                                console.info(JSON.stringify(currentUser.user.toJSON()))
+                                
                             } catch (e) {
                                 console.error(e);
                             }
                         }
+                        
                     }}
                     title="Sign in with Facebook"
                 />

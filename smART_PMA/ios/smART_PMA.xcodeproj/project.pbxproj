@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* smART_PMATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* smART_PMATests.m */; };
+		010FC1301A3B48948A69A346 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39486A902054495A9C1B55B /* AddressBook.framework */; };
 		0D08A413E34D43E497B50992 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C42539A167F847B18170B07F /* libRNFirebase.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -45,10 +46,14 @@
 		4BF80076208FA224004881E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BF8004F208FA223004881E3 /* GoogleService-Info.plist */; };
 		5164A6496822549281280FF1 /* libPods-smART_PMATests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3597D68FEF1DC23D480F07 /* libPods-smART_PMATests.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		666A126D2F5F44AD8D104E75 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0BEABA86F74471986D12E3 /* SafariServices.framework */; };
+		7936FE2D6BB347C9B351AD06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CCDC73C18940708BA4C6E5 /* SystemConfiguration.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9389CA35B71E44F98CC88074 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6165600F556D40A1A26C0820 /* libz.tbd */; };
 		9A707D6282D9791559A82113 /* libPods-smART_PMA-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9560CD791EF5ABF6347ACDDF /* libPods-smART_PMA-tvOS.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B112B444529D4B2D861A038A /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B7AACC4860488E91D4C7AE /* libRCTFBSDK.a */; };
+		E4F907502DE04405A461BAAA /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72676F310DB140B1AF6CF6B2 /* libRNGoogleSignin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +302,13 @@
 			remoteGlobalIDString = 9350E0F11CE3B0920041D815;
 			remoteInfo = RCTFBSDK;
 		};
+		4BC97E0120964B8300A84807 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDB3B914D3E4AA58AA08FB5 /* RNGoogleSignin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FD355121D3E4A2900D06170;
+			remoteInfo = RNGoogleSignin;
+		};
 		4BE5ADAE208F9600003D2D4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8922768524DD4FAE9657F219 /* RNFirebase.xcodeproj */;
@@ -375,17 +387,23 @@
 		4EEC780DF0EAF552C5754170 /* libPods-smART_PMA-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smART_PMA-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50761754599C62DFDFF74437 /* libPods-smART_PMA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smART_PMA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6165600F556D40A1A26C0820 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6D8C0C825E1B018E010BE737 /* Pods-smART_PMA-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smART_PMA-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smART_PMA-tvOSTests/Pods-smART_PMA-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EDB3B914D3E4AA58AA08FB5 /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
+		72676F310DB140B1AF6CF6B2 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8922768524DD4FAE9657F219 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		8F0BEABA86F74471986D12E3 /* SafariServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		90B7AACC4860488E91D4C7AE /* libRCTFBSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTFBSDK.a; sourceTree = "<group>"; };
 		9560CD791EF5ABF6347ACDDF /* libPods-smART_PMA-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smART_PMA-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6ADFD81950DAEF712B249B2 /* Pods-smART_PMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smART_PMA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smART_PMA/Pods-smART_PMA.debug.xcconfig"; sourceTree = "<group>"; };
 		A74A49111251F00CA7C0F461 /* Pods-smART_PMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smART_PMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smART_PMATests/Pods-smART_PMATests.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		BA082C0A9B315526409D229B /* Pods-smART_PMA-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smART_PMA-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smART_PMA-tvOSTests/Pods-smART_PMA-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C39486A902054495A9C1B55B /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C42539A167F847B18170B07F /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
+		C6CCDC73C18940708BA4C6E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CC60E80D80B2B4995ADFDA26 /* Pods-smART_PMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smART_PMA.release.xcconfig"; path = "Pods/Target Support Files/Pods-smART_PMA/Pods-smART_PMA.release.xcconfig"; sourceTree = "<group>"; };
 		CE2497D384D94B2EAE690A29 /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
 		F4969AD3DB62E3B8D8A26792 /* Pods-smART_PMA-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smART_PMA-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smART_PMA-tvOS/Pods-smART_PMA-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -425,6 +443,11 @@
 				0D08A413E34D43E497B50992 /* libRNFirebase.a in Frameworks */,
 				25AF27F0FCDF240A9BAC0DD2 /* libPods-smART_PMA.a in Frameworks */,
 				B112B444529D4B2D861A038A /* libRCTFBSDK.a in Frameworks */,
+				E4F907502DE04405A461BAAA /* libRNGoogleSignin.a in Frameworks */,
+				9389CA35B71E44F98CC88074 /* libz.tbd in Frameworks */,
+				666A126D2F5F44AD8D104E75 /* SafariServices.framework in Frameworks */,
+				7936FE2D6BB347C9B351AD06 /* SystemConfiguration.framework in Frameworks */,
+				010FC1301A3B48948A69A346 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +608,10 @@
 				4EEC780DF0EAF552C5754170 /* libPods-smART_PMA-tvOSTests.a */,
 				4B8AFE76209642640055334D /* FBSDKLoginKit.framework */,
 				0E3597D68FEF1DC23D480F07 /* libPods-smART_PMATests.a */,
+				6165600F556D40A1A26C0820 /* libz.tbd */,
+				8F0BEABA86F74471986D12E3 /* SafariServices.framework */,
+				C6CCDC73C18940708BA4C6E5 /* SystemConfiguration.framework */,
+				C39486A902054495A9C1B55B /* AddressBook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -597,11 +624,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4BC97DFE20964B8300A84807 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BC97E0220964B8300A84807 /* libRNGoogleSignin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4BE5AD85208F95FF003D2D4C /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				C42539A167F847B18170B07F /* libRNFirebase.a */,
 				90B7AACC4860488E91D4C7AE /* libRCTFBSDK.a */,
+				72676F310DB140B1AF6CF6B2 /* libRNGoogleSignin.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -649,6 +685,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				8922768524DD4FAE9657F219 /* RNFirebase.xcodeproj */,
 				CE2497D384D94B2EAE690A29 /* RCTFBSDK.xcodeproj */,
+				6EDB3B914D3E4AA58AA08FB5 /* RNGoogleSignin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -883,6 +920,10 @@
 				{
 					ProductGroup = 4BE5ADAB208F9600003D2D4C /* Products */;
 					ProjectRef = 8922768524DD4FAE9657F219 /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = 4BC97DFE20964B8300A84807 /* Products */;
+					ProjectRef = 6EDB3B914D3E4AA58AA08FB5 /* RNGoogleSignin.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1125,6 +1166,13 @@
 			fileType = archive.ar;
 			path = libRCTFBSDK.a;
 			remoteRef = 4B0D23CC20963A5F00F74130 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4BC97E0220964B8300A84807 /* libRNGoogleSignin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGoogleSignin.a;
+			remoteRef = 4BC97E0120964B8300A84807 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		4BE5ADAF208F9600003D2D4C /* libRNFirebase.a */ = {
@@ -1385,12 +1433,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = smART_PMATests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1413,12 +1463,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = smART_PMATests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1446,6 +1498,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = smART_PMA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1473,6 +1526,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = smART_PMA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1503,11 +1557,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = "smART_PMA-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1540,11 +1596,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = "smART_PMA-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1576,11 +1634,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = "smART_PMA-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1612,11 +1672,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = "smART_PMA-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

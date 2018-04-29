@@ -12,6 +12,7 @@
     "react-native-deck-swiper": "^1.5.9",
     "react-native-fbsdk": "^0.7.0",
     "react-native-firebase": "^4.0.5",
+    "react-native-google-signin": "^0.10.0",
     "react-native-swipeout": "^2.3.3",
     "react-navigation": "^1.5.11"
   },
