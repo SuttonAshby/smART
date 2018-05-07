@@ -45,12 +45,15 @@ export default class App extends Component {
     super();
     this.state = {
       isAuthenticated: false,
+      currentUser: null
     };
   }
 
   componentDidMount() {
-    firebase.auth().signInAnonymously()
+    firebase.auth().signInAnonymouslyAndRetrieveData()
       .then(() => {
+        var user = firebase.auth().currentUser
+        console.log(user)
         this.setState({
           isAuthenticated: true,
         });
