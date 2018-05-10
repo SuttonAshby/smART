@@ -45,12 +45,46 @@ export default class App extends Component {
     super();
     this.state = {
       isAuthenticated: false,
-      currentUser: null
+      currentUser: null,
+      loading: true
     };
   }
 
   componentDidMount() {
-    firebase.auth().signInAnonymouslyAndRetrieveData()
+    this.authSubscription = firebase.auth().onAuthStateChanged((user) => {
+      this.setState({
+        loading: false,
+        user
+      })
+    })
+
+    // firebase.auth().signInAnonymouslyAndRetrieveData()
+    //   .then(() => {
+    //     var user = firebase.auth().currentUser
+    //     console.log(user)
+    //     this.setState({
+    //       isAuthenticated: true,
+    //     });
+    //   });
+  }
+
+  componentWillUnmount(){
+    this.authSubscription();
+  }
+
+
+  render() {
+
+    if(this.state.loading){
+      return null;
+    }
+
+    if(this.state.user){
+      return (
+        <RootStack />
+      )
+
+      firebase.auth().signInAnonymouslyAndRetrieveData()
       .then(() => {
         var user = firebase.auth().currentUser
         console.log(user)
@@ -58,18 +92,18 @@ export default class App extends Component {
           isAuthenticated: true,
         });
       });
-  }
-
-  render() {
-
-    // If the user has not authenticated
-    if (!this.state.isAuthenticated) {
-      return null;
     }
 
-    return (
-      <RootStack />
-    )
+
+
+    // // If the user has not authenticated
+    // if (!this.state.isAuthenticated) {
+    //   return null;
+    // }
+
+    // return (
+    //   <RootStack />
+    // )
   }
 };
 

@@ -61,7 +61,9 @@ export default class NewUser extends Component {
                 />
                 <Button
                     onPress={() => {
+                        var test = this.state.email
                         alert("You are creating an account!");
+                        console.log(test)
                     }}
                     title="Create My Account"
                 />
